@@ -1,0 +1,15 @@
+<div class="container" *ngIf="book">
+  <div class="book-details">
+    <div class="book-image">
+      <img [src]="book.image" alt="{{ book.title }}" />
+    </div>
+    <div class="book-info">
+      <h2>{{ book.title }}</h2>
+      <h4>{{ book.author }}</h4>
+      <p><strong>Publisher:</strong>{{ book.publisher }}</p>
+      <p><strong>Published Date:</strong>{{ book.publishedDate }}</p>
+      <p><strong>Description:</strong>{{ book.description }}</p>
+      <a [routerLink]="['/books/edit', book.id]">Edit</a>
+    </div>
+  </div>
+</div>
