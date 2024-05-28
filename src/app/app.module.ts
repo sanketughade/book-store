@@ -10,9 +10,15 @@ import { CoreModule } from './core/core.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { HighlightDirective } from './shared/highlight.directive';
+import { TitleCasePipe } from './shared/title-case.pipe';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, HighlightDirective],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    HighlightDirective,
+    TitleCasePipe,
+  ],
   imports: [
     BrowserModule,
     FormsModule,

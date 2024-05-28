@@ -17,7 +17,7 @@
         appHighlight
       >
         <img [src]="book.image" alt="{{ book.title }}" />
-        <h3>{{ book.title }}</h3>
+        <h3>{{ book.title | titleCase }}</h3>
         <p>By: {{ book.author }}</p>
       </div>
     </div>
